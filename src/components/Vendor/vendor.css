@@ -3,14 +3,41 @@
     flex-direction: column;
 }
 .top{
+    margin: 2rem 20rem 2rem 20rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 125);
 }
 
 .bottom{
     display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    justify-content: space-around;
+}
+
+.VendorDetails{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
     flex-direction: column;
-    background-color: aqua;
+    align-items: center;
+
+    background-color: rgb(255, 255, 125) ;
+}
+
+button{
+    height: fit-content;
+    width: fit-content;
+}
+
+.Vendor-top{
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 125);
+    display: flex;
+   justify-content: space-between;
 }

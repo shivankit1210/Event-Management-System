@@ -19,7 +19,7 @@ const App = () => {
       <Route path="/admin/vendor-management" element={<VendorManagement />} />
       <Route path="/admin/vendor-management/add-membership" element={<Membership />} />
       {/* Vendor Component */}
-      <Route path="/vendor/*" element={<Vendor />} />
+      <Route path="/vendor/" element={<Vendor />} />
       {/* <Route path="/admin/" element={<VendorManagement />} /> */}
 
 

@@ -2,12 +2,12 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 
-const AdminHeader = () => {
+const VendorHeader = () => {
   const navigate=useNavigate()
   return (
-    <div className='admin-top'>
+    <div className='Vendor-top'>
       
-      <button onClick={()=>navigate('/Vendor')}>Home</button>
+      <button onClick={()=>navigate('/vendor')}>Home</button>
       <button>Logout</button>
       
        
@@ -15,4 +15,4 @@ const AdminHeader = () => {
   )
 }
 
-export default AdminHeader
+export default VendorHeader
