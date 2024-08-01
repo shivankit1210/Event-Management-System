@@ -1,16 +1,21 @@
 import React from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
-import AddUpdateMemberships from './AddUpdateMemberships';
-import UserManagement from './UserManagement';
-import VendorManagement from './VendorManagement';
+import "./admin.css"
+import { useNavigate } from 'react-router-dom';
+import AdminHeader from './AdminHeader';
+
 
 const Admin = () => {
   const navigate=useNavigate()
   return (
     <div>
+      <AdminHeader/>
       <h2>Admin Dashboard</h2>
-      <button onClick={()=>navigate('/admin/add-update-memberships')}>AddUpdateMemberships</button>
-      <button onClick={()=>navigate('/admin/user-management')}>UserManagement</button>
+      <div className='admin-board'>
+      {/* <button onClick={()=>navigate('/admin/add-update-memberships')}>Update Memberships</button> */}
+      <button onClick={()=>navigate('/admin/user-management')}>Manage User</button>
+      <button onClick={()=>navigate('/admin/vendor-management')}> Manage Vendor</button>
+      </div>
+      
      
     
       {/* <Routes>
