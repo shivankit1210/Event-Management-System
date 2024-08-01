@@ -1,0 +1,11 @@
+.Login-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem;
+
+}
+
+.btn{
+    padding: 5rem;
+}

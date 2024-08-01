@@ -56,3 +56,21 @@ button{
     height: fit-content;
     margin: 1rem;
 }
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+.membershipContainer{
+    background-color: rgb(255, 255, 125) ;
+    border-radius: 1rem;
+    width: 40rem;
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.updateItem{
+    margin: 1rem 0rem 0rem 1rem;
+}

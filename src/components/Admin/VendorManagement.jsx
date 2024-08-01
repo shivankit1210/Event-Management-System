@@ -19,7 +19,7 @@ const VendorManagement = () => {
             <button>Vendor Management</button>
             <div className="maintainbtntop">
               <button>Add</button>
-              <button>Update</button>
+              <button onClick={()=>navigate("/admin/vendor-management/add-membership")}>Update</button>
             </div>
           </div>
         </div>
