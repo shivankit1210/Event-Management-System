@@ -8,22 +8,30 @@ import AddUpdateMemberships from './components/Admin/AddUpdateMemberships'
 import UserManagement from './components/Admin/UserManagement';
 import VendorManagement from "./components/Admin/VendorManagement"
 import Membership from './components/Admin/Membership';
+import VendorPage from './components/Vendor/VendorPage';
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+
       {/* Admin Component */ }
+
       <Route path="/admin/" element={<Admin />} />
       <Route path="/admin/add-update-memberships" element={<AddUpdateMemberships />} />
       <Route path="/admin/user-management" element={<UserManagement />} />
       <Route path="/admin/vendor-management" element={<VendorManagement />} />
       <Route path="/admin/vendor-management/add-membership" element={<Membership />} />
+
       {/* Vendor Component */}
+
       <Route path="/vendor/" element={<Vendor />} />
+      <Route path='./vendor/vendor-page' element={<VendorPage/>} />
+
       {/* <Route path="/admin/" element={<VendorManagement />} /> */}
 
 
       {/* User Component */}
+
       <Route path="/user/*" element={<User />} />
     </Routes>
   );
