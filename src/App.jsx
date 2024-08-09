@@ -9,6 +9,8 @@ import UserManagement from './components/Admin/UserManagement';
 import VendorManagement from "./components/Admin/VendorManagement"
 import Membership from './components/Admin/Membership';
 import VendorPage from './components/Vendor/VendorPage';
+import Update from './components/Admin/Update';
+import Cart from "./components/User/User";
 const App = () => {
   return (
     <Routes>
@@ -21,6 +23,7 @@ const App = () => {
       <Route path="/admin/user-management" element={<UserManagement />} />
       <Route path="/admin/vendor-management" element={<VendorManagement />} />
       <Route path="/admin/vendor-management/add-membership" element={<Membership />} />
+      <Route path="/admin/vendor-management/update" element={<Update/>} />
 
       {/* Vendor Component */}
 
@@ -32,7 +35,8 @@ const App = () => {
 
       {/* User Component */}
 
-      <Route path="/user/*" element={<User />} />
+      <Route path="/user/" element={<User />} />
+      <Route path='/user/cart' element={<Cart/>}/>
     </Routes>
   );
 };
