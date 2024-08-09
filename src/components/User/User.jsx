@@ -1,10 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
-
-
-
 const User = () => {
   const navigate =useNavigate();
   return (
@@ -20,7 +16,7 @@ const User = () => {
         <option value="Catering" selected>Catering</option>
         <option value="Decoraton">Decoraton</option>
         <option value="Lightning">Lightning</option>
-        <option value="Sound manager">Sound manager</option>
+        <option >Sound manager</option>
       </select>
 
         <button onClick={()=>navigate("/user/cart")} className='bg-slate-950 rounded-lg w-32 h-16 text-white hover:bg-slate-900'>cart</button>

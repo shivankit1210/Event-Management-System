@@ -10,7 +10,7 @@ import VendorManagement from "./components/Admin/VendorManagement"
 import Membership from './components/Admin/Membership';
 import VendorPage from './components/Vendor/VendorPage';
 import Update from './components/Admin/Update';
-import Cart from "./components/User/User";
+import Cart from "./components/User/Cart";
 const App = () => {
   return (
     <Routes>
@@ -36,7 +36,7 @@ const App = () => {
       {/* User Component */}
 
       <Route path="/user/" element={<User />} />
-      <Route path='/user/cart' element={<Cart/>}/>
+      <Route path="/user/cart" element={<Cart/>}/>
     </Routes>
   );
 };
